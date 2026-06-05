@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rem-simulator
+  namespace: rail-event-monitor
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: rem-simulator
+  template:
+    metadata:
+      labels:
+        app: rem-simulator
+    spec:
+      containers:
+        - name: simulator
+          image: rail-event-monitor-simulator:latest
+          imagePullPolicy: IfNotPresent
+          envFrom:
+            - configMapRef:
+                name: rem-config
+            - secretRef:
+                name: rem-secret

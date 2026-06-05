@@ -1,0 +1,14 @@
+CREATE TABLE IF NOT EXISTS trains (
+    id BIGSERIAL PRIMARY KEY,
+    train_code VARCHAR(64) NOT NULL UNIQUE,
+    route VARCHAR(255) NOT NULL,
+    status VARCHAR(64) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS train_events (
+    id BIGSERIAL PRIMARY KEY,
+    train_code VARCHAR(64) NOT NULL,
+    event_type VARCHAR(64) NOT NULL,
+    payload TEXT NOT NULL,
+    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);

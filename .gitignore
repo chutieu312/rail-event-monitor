@@ -1,0 +1,38 @@
+# Java / Maven
+target/
+*.class
+*.jar
+
+# Node / Angular
+node_modules/
+dist/
+.angular/cache/
+storybook-static/
+coverage/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+
+# Environment secrets
+.env
+.env.local
+*.pem
+*.key
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: rem-config
+  namespace: rail-event-monitor
+data:
+  DB_HOST: rem-postgres
+  DB_PORT: "5432"
+  DB_NAME: rail_monitor
+  RABBITMQ_HOST: rem-rabbitmq
+  RABBITMQ_PORT: "5672"
+  APP_EXCHANGE: train.events.exchange
+  APP_ROUTING_KEY: train.events.key
