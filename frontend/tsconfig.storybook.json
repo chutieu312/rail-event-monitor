@@ -4,7 +4,8 @@
     "outDir": "./out-tsc/storybook"
   },
   "files": [
-    ".storybook/preview.ts"
+    ".storybook/preview.ts",
+    "src/polyfills.ts"
   ],
   "include": [
     "src/**/*.stories.ts",
