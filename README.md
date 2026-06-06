@@ -20,13 +20,19 @@ docker compose up --build
 - Frontend dashboard: http://localhost:4200
 - Backend API: http://localhost:18080
 - Swagger UI: http://localhost:18080/swagger-ui.html
-- RabbitMQ Management UI: http://localhost:15672 (guest/guest)
+- RabbitMQ Management UI: http://localhost:15672
 - Adminer: http://localhost:8888
 - Active incidents API: http://localhost:18080/api/incidents/active
 
 ## Demo Credentials
-- Username: ops@railmonitor.local
-- Password: demo1234
+- **Frontend Dashboard**: `ops@railmonitor.local` / `demo1234`
+- **RabbitMQ Management**: `guest` / `guest`
+- **Adminer**:
+  - System: `PostgreSQL`
+  - Server: `db`
+  - Username: `postgres`
+  - Password: `postgres`
+  - Database: `rail_monitor`
 
 ## Local Frontend Dev (optional)
 
