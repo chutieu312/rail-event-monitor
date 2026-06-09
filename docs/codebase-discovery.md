@@ -97,12 +97,12 @@
 
 ## Session Progress
 
-- [ ] Phase 0 — Welcome
-- [ ] Phase 1 — Maven + application.yml
-- [ ] Phase 2 — Spring Boot Entry Point
-- [ ] Phase 3 — Flyway Migrations + PostgreSQL Schema
-- [ ] Phase 4 — JPA Domain Model
-- [ ] Phase 5 — Repositories + Service Layer
+- [x] Phase 0 — Welcome
+- [x] Phase 1 — Maven + application.yml
+- [x] Phase 2 — Spring Boot Entry Point
+- [x] Phase 3 — Flyway Migrations + PostgreSQL Schema
+- [x] Phase 4 — JPA Domain Model
+- [x] Phase 5 — Repositories + Service Layer
 - [ ] Phase 6 — REST API Layer
 - [ ] Phase 7 — Spring Security + JWT
 - [ ] Phase 8 — RabbitMQ + STOMP WebSocket
